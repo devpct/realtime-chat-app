@@ -72,7 +72,7 @@ const page = async ({ params }: PageProps) => {
     `user:${chatPartnerId}`
   )) as string
   const chatPartner = JSON.parse(chatPartnerRaw) as User
-  const initialMessages = await getChatMessages(chatId)
+  const initialMessages = await getChatMessages(chatId)  
 
   return (
     <div className='flex-1 justify-between flex flex-col h-full max-h-[calc(100vh-6rem)]'>
